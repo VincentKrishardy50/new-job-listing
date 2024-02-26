@@ -5,12 +5,13 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Job from './pages/jobs.jsx'
 import Details from './pages/detail.jsx'
+import Error from './pages/error.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <div>Error di Halaman Utama</div>,
+    errorElement: <Error/>
   },
   {
     path: '/jobs',
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
         element: <Details/>
       }
     ],
-    errorElement: <div>Error di Job Listing</div>
+    errorElement: <Error/>
   }
 ]);
 
