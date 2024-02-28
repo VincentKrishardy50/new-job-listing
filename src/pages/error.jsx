@@ -11,7 +11,7 @@ export default function Error(){
                 <h3>Halaman yang Anda cari tidak ditemukan.
                 <br /> Bisa jadi karena url tersebut salah atau tidak tersedia.</h3>
                 <br />
-                <Link className="buton" to="..">Kembali</Link>
+                <Link className="buton" to=".">Kembali</Link>
             </div>
         </>
     
